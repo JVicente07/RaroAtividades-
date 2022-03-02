@@ -11,12 +11,12 @@ function fila() {
       return fila.splice(0,1)
     };
 
-    const mostrar = () => {
+    const listar = () => {
         console.log(fila)
     }
 
   
-    return {mostrar, adicionar, remover };
+    return {listar, adicionar, remover };
   }
   
   function pilha() {
