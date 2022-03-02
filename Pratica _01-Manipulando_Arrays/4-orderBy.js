@@ -4,14 +4,14 @@ const alunos = [
     { nome: 'Pedro', nota: 9.8, bolsista: false },
     { nome: 'Ana', nota: 8.7, bolsista: true }
 ]
-function orderBy(students, filters){
+function orderBy(students, parametros){
     const result = students.map((student)=>{
-        let obj = {}
+        let objeto = {}
 
-        filters.forEach((filter)=>{
-            obj[filter] = student[filter]
+        parametros.forEach((filter)=>{
+            objeto[filter] = student[filter]
         })
-        return obj
+        return objeto
     })
  return (result.sort())
 
