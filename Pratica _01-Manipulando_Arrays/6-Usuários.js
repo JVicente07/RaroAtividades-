@@ -4,7 +4,7 @@ const usuarios = [
     { nome: 'Lucas', idade: 30, ativo: false },
 ];
   
-function estado(arr){
+function atividade(arr){
     const usuariosAtivos = [] 
     const usuariosInativos = []
     arr.map(usuario => {
@@ -15,8 +15,9 @@ function estado(arr){
         }
     })
 
-    return(console.log(usuariosAtivos,'\n',usuariosInativos))
+   console.log(usuariosAtivos);
+   console.log(usuariosInativos)
 
 }
 
-estado(usuarios)
+atividade(usuarios)
